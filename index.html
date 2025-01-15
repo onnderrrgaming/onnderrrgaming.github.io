@@ -5,81 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diamond Blocks DI Game</title>
     <style>
+        /* General Page Styling */
         body {
-            font-family: 'Trebuchet MS', sans-serif;
+            font-family: 'Press Start 2P', Arial, sans-serif; /* Gaming-inspired font */
             margin: 0;
             padding: 0;
-            background-color: #1a1a1a;
-            color: #e0e0e0;
+            background-color: #1a1a1a; /* Dark background */
+            color: #eaeaea; /* Light text for contrast */
+            line-height: 1.6;
         }
+
+        /* Header Styling */
         header {
-            background-color: #222;
-            color: #f4d03f;
+            background-color: #4CAF50;
+            color: white;
             padding: 1.5rem;
             text-align: center;
-            font-size: 2rem;
+            text-transform: uppercase;
         }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Section Styling */
         section {
             padding: 2rem;
         }
-        h2 {
-            color: #f4d03f;
+
+        section h2 {
+            font-size: 1.8rem;
+            color: #4CAF50;
         }
-        p, li {
-            font-size: 1.2rem;
-            line-height: 1.8;
-        }
-        ul {
-            list-style-type: square;
-            margin-left: 1.5rem;
-        }
+
+        /* Screenshots Grid */
         .screenshots {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
         }
+
         .screenshots img {
             width: 100%;
-            border: 1px solid #444;
-            border-radius: 8px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         }
-        .videos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
-            margin-top: 2rem;
+
+        /* Videos Section */
+        .video-wrapper {
+            width: 66.67%;
+            max-width: 800px;
+            margin: 1.5rem auto;
         }
-        .videos video {
+
+        .video-wrapper video {
             width: 100%;
-            border-radius: 8px;
-            border: 2px solid #444;
+            height: auto;
+            border: 2px solid #333;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         }
+
+        /* Footer Styling */
         footer {
             text-align: center;
             padding: 1.5rem;
-            background-color: #111;
-            color: #ccc;
-            font-size: 1rem;
+            background-color: #333;
+            color: white;
+            font-size: 0.9rem;
         }
+
+        footer strong {
+            color: #4CAF50;
+        }
+
         a {
-            color: #f4d03f;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+            color: #4CAF50;
         }
     </style>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <h1>Diamond Blocks DI Game</h1>
         <h2>A Revolutionary Block Puzzle Experience by Simple Games DI</h2>
     </header>
 
+    <!-- About Section -->
     <section>
         <h2>About the Game</h2>
         <p>Welcome to <strong>Diamond Blocks DI Game</strong>, the ultimate block puzzle game! Strategically place blocks on the grid to create and clear rows or columns, earning points and progressing to higher levels. With stunning graphics and addictive gameplay, Diamond Blocks DI Game is a must-play for puzzle enthusiasts!</p>
-        <p>Features include:</p>
         <ul>
             <li>Intuitive gameplay suitable for all ages</li>
             <li>Challenging levels to test your skills</li>
@@ -87,33 +109,35 @@
         </ul>
     </section>
 
+    <!-- Screenshots Section -->
     <section>
         <h2>Screenshots</h2>
         <div class="screenshots">
-            <img src="screenshot-13.png" alt="Launch Screen">
-            <img src="screenshot-18.png" alt="Game Menu">
+            <img src="screenshot1.png" alt="Launch Screen">
+            <img src="screenshot2.png" alt="Game Menu">
+            <img src="screenshot3.png" alt="Gameplay">
             <img src="screenshot4.png" alt="Settings">
-            <img src="screenshot-19.png" alt="Purchase">
-            <img src="screenshot3.png" alt="About">
-            <img src="screenshot5.png" alt="Fancy Theme">
-            <img src="screenshot-20.png" alt="Default Theme">
-            <img src="screenshot-21.png" alt="Black & White Theme">
+            <img src="screenshot5.png" alt="Themes">
             <img src="screenshot6.png" alt="Game Over View">
-            <img src="screenshot7.png" alt="Game Over Fancy Theme">
         </div>
     </section>
 
+    <!-- Videos Section -->
     <section>
         <h2>Gameplay Videos</h2>
-        <div class="videos">
+        <div class="video-wrapper">
             <video controls>
                 <source src="gameplay1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+        </div>
+        <div class="video-wrapper">
             <video controls>
                 <source src="gameplay2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+        </div>
+        <div class="video-wrapper">
             <video controls>
                 <source src="gameplay3.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -121,11 +145,13 @@
         </div>
     </section>
 
+    <!-- Support Section -->
     <section>
         <h2>Support</h2>
         <p>If you encounter any issues or have questions about the game, feel free to reach out to us at <a href="mailto:onnderrr.gaming@gmail.com">onnderrr.gaming@gmail.com</a>.</p>
     </section>
 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Simple Games DI. All rights reserved.</p>
         <p>The application is available on the <strong>App Store</strong> and will soon be available on <strong>Google Play Store</strong>.</p>
