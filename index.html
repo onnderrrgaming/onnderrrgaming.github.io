@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: #1a1a1a; /* Dark background */
-            color: #eaeaea; /* Light text for contrast */
+            color: #ffd700; /* Yellow text for contrast */
             line-height: 1.6;
         }
 
@@ -41,7 +41,7 @@
 
         section h2 {
             font-size: 1.8rem;
-            color: #4CAF50;
+            color: #ffd700; /* Yellow heading */
         }
 
         /* Screenshots Grid */
@@ -53,24 +53,25 @@
 
         .screenshots img {
             width: 100%;
-            border: 2px solid #333;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            border: 5px solid #4CAF50;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.7); /* 3D glowing effect */
         }
 
         /* Videos Section */
-        .video-wrapper {
-            width: 66.67%;
-            max-width: 800px;
-            margin: 1.5rem auto;
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            justify-items: center;
         }
 
-        .video-wrapper video {
-            width: 100%;
+        .videos video {
+            width: 66.67%; /* Resized to 2/3 of original size */
             height: auto;
-            border: 2px solid #333;
+            border: 3px solid #ffd700;
             border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.7); /* 3D glowing effect */
         }
 
         /* Footer Styling */
@@ -83,11 +84,11 @@
         }
 
         footer strong {
-            color: #4CAF50;
+            color: #ffd700;
         }
 
         a {
-            color: #4CAF50;
+            color: #ffd700;
         }
     </style>
 </head>
@@ -125,19 +126,15 @@
     <!-- Videos Section -->
     <section>
         <h2>Gameplay Videos</h2>
-        <div class="video-wrapper">
+        <div class="videos">
             <video controls>
                 <source src="gameplay1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        </div>
-        <div class="video-wrapper">
             <video controls>
                 <source src="gameplay2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        </div>
-        <div class="video-wrapper">
             <video controls>
                 <source src="gameplay3.mp4" type="video/mp4">
                 Your browser does not support the video tag.
